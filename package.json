@@ -5,7 +5,7 @@
     "description": "Launcher de minecraft para los servidores de Miguelki Network",
     "main": "src/app.js",
     "author": "Miguelki",
-    "url": "http://mnlapi.atwebpages.com",
+    "url": "http://networkapi.999dripshop.com",
     "engines": {
         "node": "^16.x.x"
     },
