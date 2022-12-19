@@ -137,7 +137,7 @@ class Home {
 
             launch.on('progress', (DL, totDL) => {
                 progressBar.style.display = "block"
-                document.querySelector(".text-download").innerHTML = `Descargar ${((DL / totDL) * 100).toFixed(0)}%`
+                document.querySelector(".text-download").innerHTML = `Descargando: ${((DL / totDL) * 100).toFixed(0)}%`
                 ipcRenderer.send('main-window-progress', {DL, totDL})
                 progressBar.value = DL;
                 progressBar.max = totDL;
