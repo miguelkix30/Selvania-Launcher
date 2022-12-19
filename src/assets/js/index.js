@@ -23,9 +23,18 @@ class Splash {
     async startAnimation() {
         let splashes = [
             { "message": "Miguelki Network", "author": "Miguelki" },
+            { "message": "Das Leben ist nicht Schwäche verzeihen", "author": "Adolf Hitler" },
             { "message": "1 de cada 2 personas son gays.", "author": "Miguelki" },
+            { "message": "Zzz", "author": "Miguelki" },
+            { "message": "Messi", "author": "Messi" },
+            { "message": "Vaporeon puede tener relaciones con humanos", "author": " " },
+            { "message": "Tienes menos luces que una lampara", "author": "Miguelki" },
             { "message": "Te llama tu madre", "author": "Miguelki" },
-            { "message": "Entrando en tu cerebro.", "author": "Miguelki" }
+            { "message": "Argentina ganó 🏳‍🌈. Ups bandera erronea", "author": "Miguelki" },
+            { "message": "Perdon por besar a tu madre", "author": "Miguelki" },
+            { "message": "Bese a tu novia. Ah perdon que no tienes", "author": "Miguelki" },
+            { "message": "Entrando en tu cerebro.", "author": "Miguelki" },
+            { "message": "Me aburro", "author": "Miguelki" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -39,7 +48,7 @@ class Splash {
         this.splashMessage.classList.add("opacity");
         this.splashAuthor.classList.add("opacity");
         this.message.classList.add("opacity");
-        await sleep(1000);
+        await sleep(3000);
         this.checkUpdate();
     }
 
@@ -86,10 +95,10 @@ class Splash {
     }
 
     shutdown(text) {
-        this.setStatus(`${text}<br>Parar en 5s`);
+        this.setStatus(`${text}<br>Cerrando en 5s`);
         let i = 4;
         setInterval(() => {
-            this.setStatus(`${text}<br>Parar en ${i--}s`);
+            this.setStatus(`${text}<br>Cerrando en ${i--}s`);
             if (i < 0) ipcRenderer.send('update-window-close');
         }, 1000);
     }
