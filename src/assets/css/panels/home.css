@@ -121,7 +121,7 @@
 .news-block {
     margin-bottom: 1rem;
     transition: opacity 1s;
-    opacity: .4;
+    opacity: .8;
 }
 
 .news-block:hover {
@@ -229,7 +229,35 @@
     background-color: #292929;
     border-radius: 10px;
     transition: opacity 1s;
-    opacity: .4;
+    opacity: .8;
+}
+.changelog {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #292929;
+    border-radius: 10px;
+    transition: opacity 1s;
+    opacity: .8;
+}
+
+.changelog:hover {
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.bbWrapperChange {
+    position: relative;
+    height: 300px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    word-wrap: normal;
+    font-family: Poppins;
+    font-size: 13px !important;
+    color: #E1E1E1;
+    text-decoration: none;
+    border-radius: 0px 0px 10px 10px;
+    transition: color .2s;
 }
 
 .server:hover {
