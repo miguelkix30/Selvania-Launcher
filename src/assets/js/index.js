@@ -27,6 +27,7 @@ class Splash {
             { "message": "1 de cada 2 personas son gays.", "author": "Miguelki" },
             { "message": "Zzz", "author": "Miguelki" },
             { "message": "Messi", "author": "Messi" },
+            { "message": "Aún va sin h miguel", "author": "Carmen" },
             { "message": "Vaporeon puede tener relaciones con humanos", "author": " " },
             { "message": "Tienes menos luces que una lampara", "author": "Miguelki" },
             { "message": "Te llama tu madre", "author": "Miguelki" },
