@@ -79,7 +79,7 @@ class Home {
                 </div>
                 <div class="news-content">
                     <div class="bbWrapper">
-                        <p>Impossible de contacter le serveur des news.</br>Merci de vérifier votre configuration.</p>
+                        <p>Imposible actualizar las noticias.</br>Probablemente la rata de dixo se coló en los servidores.</p>
                     </div>
                 </div>`
             // news.appendChild(blockNews);
@@ -209,7 +209,7 @@ class Home {
             online.classList.toggle("off");
             playersConnected.textContent = serverPing.playersConnect;
         } else if (serverPing.error) {
-            nameServer.textContent = 'Servidor no disponible';
+            nameServer.textContent = 'Parallel Craft';
             serverMs.innerHTML = `<span class="red">Sin conexión</span>`;
         }
     }
