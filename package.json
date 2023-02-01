@@ -1,11 +1,11 @@
 {
     "name": "Miguelki-Network-Launcher",
     "preductname": "Miguelki Network Launcher",
-    "version": "2.0.8",
+    "version": "2.0.9",
     "description": "Launcher de minecraft para los servidores de Miguelki Network",
     "main": "src/app.js",
     "author": "Miguelki",
-    "url": "http://miguelkinetworkapi.gamesite.ml",
+    "url": "http://2.153.72.22:80",
     "engines": {
         "node": "^18.x.x"
     },
