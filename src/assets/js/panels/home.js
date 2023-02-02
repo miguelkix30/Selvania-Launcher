@@ -61,7 +61,7 @@ class Home {
                         </div>
                         <div class="news-content">
                             <div class="bbWrapper">
-                                <p>${News.content.replace(/\n/g, '</br>')}</p>
+                                <p>${News.content}</p>
                                 <p class="news-author">Autor,<span> ${News.author}</span></p>
                             </div>
                         </div>`
@@ -82,7 +82,7 @@ class Home {
                         <p>Imposible actualizar las noticias.</br>Probablemente la rata de dixo se coló en los servidores.</p>
                     </div>
                 </div>`
-            // news.appendChild(blockNews);
+             news.appendChild(blockNews);
         }
     }
 
