@@ -100,7 +100,7 @@ class Login {
         })
     }
 
-    loginMojang() {
+    async loginMojang() {
         let mailInput = document.querySelector('.Mail')
         let passwordInput = document.querySelector('.Password')
         let cancelMojangBtn = document.querySelector('.cancel-mojang')
@@ -146,7 +146,7 @@ class Login {
 
             let account_connect = await Mojang.login(mailInput.value, passwordInput.value)
 
-            if(account_connect == null || account_connect.error) {
+            if (account_connect == null || account_connect.error) {
                 console.log(err)
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
@@ -186,7 +186,7 @@ class Login {
         })
     }
 
-    loginOffline() {
+    async loginOffline() {
         let mailInput = document.querySelector('.Mail')
         let passwordInput = document.querySelector('.Password')
         let cancelMojangBtn = document.querySelector('.cancel-mojang')
@@ -234,7 +234,7 @@ class Login {
 
             let account_connect = await Mojang.login(mailInput.value, passwordInput.value)
 
-            if(account_connect == null || account_connect.error) {
+            if (account_connect == null || account_connect.error) {
                 console.log(err)
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
