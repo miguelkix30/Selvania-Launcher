@@ -64,11 +64,15 @@
     height: 37px;
     border-radius: 20px;
     border: none;
-    background: #00bd7a;
+    background: #0072CC;
     font: normal normal bold 20px/25px Poppins;
-    color: #121212;
+    color: #ffffff;
     margin: 15px 0;
-    box-shadow: 0 0 5px #00bd7a;
+    box-shadow: 0 0 5px #0072CC;
+}
+.play-btn:hover {
+    background-color: #004d88;
+    box-shadow: 0 0 5px #004d88;
 }
 
 .download-content {
