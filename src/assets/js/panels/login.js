@@ -194,7 +194,9 @@ class Login {
         let loginBtn = document.querySelector(".login-btn")
         let mojangBtn = document.querySelector('.mojang')
 
-        mojangBtn.innerHTML = "Offline"
+        mojangBtn.innerHTML = "No premium"
+        passwordInput.disabled = true;
+        passwordInput.style.display = "none";
 
         mojangBtn.addEventListener("click", () => {
             document.querySelector(".login-card").style.display = "none";
@@ -219,7 +221,7 @@ class Login {
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
-                passwordInput.disabled = false;
+                passwordInput.disabled = true;
                 return
             }
 
@@ -228,7 +230,7 @@ class Login {
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
-                passwordInput.disabled = false;
+                passwordInput.disabled = true;
                 return
             }
 
@@ -239,7 +241,7 @@ class Login {
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
-                passwordInput.disabled = false;
+                passwordInput.disabled = true;
                 infoLogin.innerHTML = 'Dirección de correo electrónico o contraseña no válidas'
                 return
             }
@@ -268,7 +270,7 @@ class Login {
             mailInput.value = "";
             loginBtn.disabled = false;
             mailInput.disabled = false;
-            passwordInput.disabled = false;
+            passwordInput.disabled = true;
             loginBtn.style.display = "block";
             infoLogin.innerHTML = "&nbsp;";
         })
