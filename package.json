@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
-        "build": "node build.js",
+        "build": "node build.js --obf=true",
         "dev": "nodemon --exec npm start"
     },
     "license": "CC0",
@@ -29,6 +29,7 @@
         "cross-env": "^7.0.3",
         "electron": "^20.0.0",
         "electron-builder": "^23.0.3",
+        "javascript-obfuscator": "^4.0.2",
         "nodemon": "^2.0.16"
     },
     "repository": {
