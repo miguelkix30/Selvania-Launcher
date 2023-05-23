@@ -21,12 +21,13 @@
     "dependencies": {
         "electron-updater": "^5.0.1",
         "minecraft-java-core": "^3.4.3",
-        "node-fetch": "^2.6.7"
+        "node-fetch": "^2.6.7",
+        "xml-js": "^1.6.11"
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
-        "electron": "^20.0.0",
-        "electron-builder": "^23.0.3",
+        "electron": "^24.3.1",
+        "electron-builder": "^24.4.0",
         "javascript-obfuscator": "^4.0.2",
         "nodemon": "^2.0.16"
     },
