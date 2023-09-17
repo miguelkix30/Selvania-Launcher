@@ -61,7 +61,7 @@ class Home {
                         </div>
                         <div class="news-content">
                             <div class="bbWrapper">
-                                <p>${News.content}</p>
+                                <p>${News.content.replace(/\n/g, '</br>')}</p>
                                 <p class="news-author">Autor,<span> ${News.author}</span></p>
                             </div>
                         </div>`
@@ -82,7 +82,7 @@ class Home {
                         <p>Imposible actualizar las noticias.</br>Probablemente la rata de dixo se coló en los servidores.</p>
                     </div>
                 </div>`
-             news.appendChild(blockNews);
+             //news.appendChild(blockNews);
         }
     }
 
@@ -211,7 +211,7 @@ class Home {
             online.classList.toggle("off");
             playersConnected.textContent = serverPing.playersConnect;
         } else if (serverPing.error) {
-            nameServer.textContent = 'Parallel Craft';
+            nameServer.textContent = 'Miguelki Network';
             serverMs.innerHTML = `<span class="red">Sin conexión</span>`;
         }
     }
