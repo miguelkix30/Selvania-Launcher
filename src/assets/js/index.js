@@ -35,6 +35,12 @@ class Splash {
             { "message": "Perdon por besar a tu madre", "author": "Miguelki" },
             { "message": "Bese a tu novia. Ah perdon que no tienes", "author": "Miguelki" },
             { "message": "Entrando en tu cerebro.", "author": "Miguelki" },
+            { "message": "13, cuanto más me la mamas más me crece.", "author": "Dixo" },
+            { "message": "🕸️🕷️🤘", "author": "Chiquicas" },
+            { "message": "Dixo es super maricón 🏳‍🌈👨🏿‍❤️‍💋‍👨🏿", "author": "Chiquicas" },
+            { "message": "Va llorah, Mateo?", "author": "Dixo" },
+            { "message": "Ayuda.... Foack. Ayuda.... Foack. Ayuda.... Foack.", "author": "Miguelki" },
+            { "message": "Milleurista???", "author": "Joako Puto" },
             { "message": "Me aburro", "author": "Miguelki" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
