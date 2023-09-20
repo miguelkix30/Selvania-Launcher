@@ -102,17 +102,11 @@ class Launcher {
                         name: refresh.name,
                         refresh_token: refresh.refresh_token,
                         user_properties: refresh.user_properties,
-                        meta: {
-                            type: refresh.meta.type,
-                            xuid: refresh.meta.xuid,
-                            demo: refresh.meta.demo
-                        }
+                        meta: refresh.meta
                     }
 
                     refresh_profile = {
-                        uuid: refresh.uuid,
-                        skins: refresh.profile.skins || [],
-                        capes: refresh.profile.capes || [],
+                        uuid: refresh.uuid
                     }
 
                     this.database.update(refresh_accounts, 'accounts');
@@ -120,7 +114,7 @@ class Launcher {
                     addAccount(refresh_accounts);
                     if (account.uuid === selectaccount) accountSelect(refresh.uuid)
                 } else if (account.meta.type === 'Mojang') {
-                    if (account.meta.offline) {
+                    if (!account.meta.online) {
                     console.log(`Initializing Crack account ${account.name}...`);
                         addAccount(account);
                         if (account.uuid === selectaccount) accountSelect(account.uuid)
