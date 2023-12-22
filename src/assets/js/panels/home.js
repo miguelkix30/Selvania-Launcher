@@ -82,7 +82,7 @@ class Home {
                         <p>Imposible actualizar las noticias.</br>Probablemente la rata de dixo se coló en los servidores.</p>
                     </div>
                 </div>`
-             //news.appendChild(blockNews);
+            news.appendChild(blockNews);
         }
     }
 
@@ -122,6 +122,9 @@ class Home {
                     build: this.config.loader.build,
                     enable: this.config.loader.enable,
                 },
+
+                JVM_ARGS: [...this.config.jvm_args],
+                GAME_ARGS: [...this.config.game_args],
 
                 verify: this.config.verify,
                 ignored: ['loader', ...this.config.ignored],
